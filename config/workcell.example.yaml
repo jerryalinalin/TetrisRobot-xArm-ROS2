@@ -1,0 +1,17 @@
+sorter_node:
+  ros__parameters:
+    # Row-major 2x3 matrix: camera pixel (u, v, 1) -> robot pick (x, y), mm.
+    pick_transform: [0.6199788134234798, -0.0329665386415458, 20.3605039937090027,
+                     -0.0397976429099523, -0.6173058588885968, 446.5625774096370719]
+    # Row-major 2x3 matrix: tray grid (row, col, 1) -> robot place (x, y), mm.
+    place_transform: [-1.0694221236261483, 20.0825129441224810, 337.7265604465425213,
+                      -20.1716536574476351, -1.0901639344262297, -59.3888159450250086]
+    # Robot photo pose: x, y, z (mm), roll, pitch, yaw (rad).
+    initial_pose: [434.7, 130.2, 474.7, 3.14159, 0.0, 1.53]
+
+move_once:
+  ros__parameters:
+    up_height: 60.0
+    down_height: -24.0
+    place_clearance: 20.0
+    suction_voltage: 5.0

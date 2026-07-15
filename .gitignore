@@ -1,0 +1,37 @@
+# Build artifacts
+build*/
+install/
+log/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*~
+
+# Temp/backup
+*bak/
+**/old
+*ignore_*
+
+# Personal config (contains IP/user-specific settings)
+xarm_api/config/xarm_user_params.yaml
+xarm_description/config/kinematics/user
+
+# Runtime generated strategy visualizations
+src/block_sorter/data/strategy_plan_*.png
+
+# Local source evidence may contain identifying metadata
+docs/*.pdf
+docs/*.mp4
+
+# Local workcell calibration output
+config/calib_result.txt
+
+# xArm user config (machine-specific)
+src/xarm_api/config/xarm_user_params.yaml

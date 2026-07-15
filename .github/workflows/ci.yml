@@ -1,0 +1,29 @@
+name: Offline checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Run repository regressions
+        run: python tests/test_repository_regressions.py
+
+      - name: Check Markdown links
+        run: python tests/check_markdown_links.py
+
+      - name: Check shell syntax
+        run: bash -n scripts/start_pipeline.sh scripts/start_color.sh

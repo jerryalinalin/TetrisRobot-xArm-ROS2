@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypesxsd="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>color_detector</name>
+  <version>0.1.0</version>
+  <description>Color block detection using RealSense camera.
+    Subscribes to camera image, performs color segmentation and contour
+    analysis to detect colored Tetris blocks, and publishes detected
+    target positions/colors.</description>
+  <maintainer email="jerryalinalin@users.noreply.github.com">jerryalinalin</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <build_depend>OpenCV</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>OpenCV</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

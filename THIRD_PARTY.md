@@ -1,10 +1,10 @@
-# Third-party components
+# 第三方组件与许可边界
 
-This repository contains project-specific ROS2 packages together with a source snapshot of the UFACTORY xArm ROS2 ecosystem. The separation below is important for attribution and license compliance.
+本仓库同时包含项目自有 ROS2 packages 与 UFACTORY xArm ROS2 生态的源码快照。明确区分两类内容，有助于正确说明贡献范围并遵守相应许可证。
 
-## Project task layer
+## 项目任务层
 
-The following paths implement the Tetris perception, planning, calibration, and orchestration workflow described in this repository:
+以下路径实现了仓库所描述的俄罗斯方块感知、规划、标定和流程编排：
 
 - `src/block_sorter/`
 - `src/color_detector/`
@@ -12,21 +12,21 @@ The following paths implement the Tetris perception, planning, calibration, and 
 - `config/`
 - `docs/`
 
-These paths follow the repository-level [MIT License](LICENSE), except where a file carries a more specific notice.
+除非文件中存在更具体的许可声明，上述路径遵循仓库根目录的 [MIT License](LICENSE)。
 
-## UFACTORY xArm ecosystem
+## UFACTORY xArm 生态
 
-| Path | Upstream project | License source |
+| 路径 | 上游项目 | 许可证来源 |
 | --- | --- | --- |
-| `src/xarm_api/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` and notices in the component |
-| `src/xarm_description/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` and notices in the component |
-| `src/xarm_msgs/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` and notices in the component |
-| `src/xarm_sdk/` | [xArm-Developer/xArm-CPLUS-SDK](https://github.com/xArm-Developer/xArm-CPLUS-SDK) and xArm ROS2 integration | `src/xarm_sdk/cxx/LICENSE` |
-| `src/uf_ros_lib/` | UFACTORY ROS support library distributed with xArm ROS2 | `src/LICENSE` and component notices |
-| `src/thirdparty/` | Plugins distributed with the xArm ROS2 source tree | Notices and licenses inside the corresponding component |
+| `src/xarm_api/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` 及组件内声明 |
+| `src/xarm_description/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` 及组件内声明 |
+| `src/xarm_msgs/` | [xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2) | `src/LICENSE` 及组件内声明 |
+| `src/xarm_sdk/` | [xArm-Developer/xArm-CPLUS-SDK](https://github.com/xArm-Developer/xArm-CPLUS-SDK) 与 xArm ROS2 integration | `src/xarm_sdk/cxx/LICENSE` |
+| `src/uf_ros_lib/` | 随 xArm ROS2 分发的 UFACTORY ROS support library | `src/LICENSE` 及组件内声明 |
+| `src/thirdparty/` | 随 xArm ROS2 源码树分发的 plugins | 对应组件目录中的声明与许可证 |
 
-The repository history starts from a bulk source import and does not preserve the exact upstream branch, tag, or commit for this snapshot. The files are therefore attributed to their upstream projects without claiming an exact revision.
+仓库历史从一次批量源码导入开始，没有保留该快照对应的准确上游 branch、tag 或 commit。因此本文按上游项目标注文件来源，不对具体版本作无法验证的声明。
 
-## Redistribution
+## 再分发说明
 
-The root MIT license does not replace third-party licenses. When redistributing the complete repository, retain `src/LICENSE`, `src/xarm_sdk/cxx/LICENSE`, copyright notices, and any component-specific license files.
+仓库根目录的 MIT License 不会替代第三方许可证。完整分发本仓库时，应保留 `src/LICENSE`、`src/xarm_sdk/cxx/LICENSE`、著作权声明以及各组件专用的许可证文件。

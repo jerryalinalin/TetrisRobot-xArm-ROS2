@@ -62,8 +62,8 @@ xArm ROS2 services ◄── move_service ◄── /Move_Once
 ## 快速开始
 
 ```bash
-git clone https://github.com/jerryalinalin/TetrisRobot_xArm_ROS2.git
-cd TetrisRobot_xArm_ROS2
+git clone https://github.com/jerryalinalin/TetrisRobot-xArm-ROS2.git
+cd TetrisRobot-xArm-ROS2
 
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
@@ -112,7 +112,7 @@ python3 scripts/calibration/calibrate_place.py
 ## 项目结构
 
 ```text
-TetrisRobot_xArm_ROS2/
+TetrisRobot-xArm-ROS2/
 ├── config/
 │   └── workcell.example.yaml
 ├── docs/
